@@ -1,62 +1,56 @@
-# AgenticCraft 🤖✨
+  # AgentiCraft
 
-> Building the future of AI agents - one craft at a time.
+  **Enterprise-grade agentic AI platform with multi-provider LLM support**
 
-## 🚀 What We're Building
+  Building powerful AI agents shouldn't be complicated.
 
-AgenticCraft is an open-source framework for building production-ready AI agents with enterprise-grade features. Our mission is to make AI agent development accessible, powerful, and scalable.
+  ## What is AgentiCraft?
 
-### 🌟 Key Features
+  AgentiCraft is an open-source framework for creating production-ready AI agents with enterprise capabilities. It combines a
+  modular architecture with 116 battle-tested patterns for cognitive reasoning, coordination, resilience, and workflows.
 
-- **🧩 Modular Architecture** - Build agents with composable components
-- **🔌 Plugin System** - Extend functionality with community plugins
-- **🤝 Multi-LLM Support** - OpenAI, Anthropic, Ollama, and more
-- **⚡ Production Ready** - Built-in monitoring, scaling, and deployment tools
-- **🎨 Visual Tools** - Design agents with our intuitive UI (coming soon)
+  ## Key Features
 
-### 📦 Our Projects
+  ### Multi-Provider LLM Support
+  - OpenAI, Anthropic, Google, Together, Groq, Mistral, Ollama
+  - Unified API across all providers
+  - Automatic fallback and load balancing
 
-- **[agenticraft](https://github.com/agenticraft/agenticraft)** - Core framework and agent runtime
-- **[agenticraft-ui](https://github.com/agenticraft/agenticraft-ui)** - Web interface and visual designer
-- **[agenticraft-examples](https://github.com/agenticraft/agenticraft-examples)** - Examples and tutorials
-- **[agenticraft-plugins](https://github.com/agenticraft/agenticraft-plugins)** - Plugin ecosystem
-- **[agenticraft-docs](https://github.com/agenticraft/agenticraft-docs)** - Documentation
+  ### 116 Agent Patterns
+  - **Cognitive**: Chain-of-thought, ReAct, reflection
+  - **Coordination**: Supervisor, swarm, hierarchical
+  - **Resilience**: Circuit breaker, retry, bulkhead
+  - **Workflow**: DAG, saga, state machine
 
-### 🔗 Quick Links
+  ### Enterprise Infrastructure
+  - 19 mesh services with 9-layer security
+  - MCP and A2A protocol integration
+  - gRPC and WebSocket transports
+  - OpenTelemetry distributed tracing
+  - Vector memory (ChromaDB, FAISS, Qdrant, Weaviate)
 
-- 🌐 [Website](https://agenticraft.ai)
-- 📚 [Documentation](https://docs.agenticraft.ai)
-- 💬 [Discord Community](https://discord.gg/agenticraft)
-- 🐦 [Twitter](https://twitter.com/agenticraft)
-- 📧 [Contact](mailto:hello@agenticraft.ai)
+  ## Quick Start
 
-### 🤝 Get Involved
+  ```python
+  from agenticraft import craft
 
-We're building AgenticCraft in the open and would love your help!
+  agent = craft.agent("assistant").with_provider("openai").build()
+  response = await agent.run("Hello, world!")
 
-- ⭐ Star our repositories
-- 🐛 Report bugs and request features
-- 🔧 Submit pull requests
-- 📖 Improve documentation
-- 💬 Join our Discord community
-- 🎯 Share your use cases
+  Repositories
 
-### 📊 Stats
+  | Repository                                 | Description             |
+  |--------------------------------------------|-------------------------|
+  | https://github.com/agenticraft/agenticraft | Core framework          |
+  | https://github.com/agenticraft/docs        | Documentation           |
+  | https://github.com/agenticraft/examples    | Example implementations |
 
-![GitHub Org's stars](https://img.shields.io/github/stars/agenticraft?style=social)
-![Discord](https://img.shields.io/discord/YOUR_DISCORD_ID?color=7289da&logo=discord&logoColor=white)
-![Twitter Follow](https://img.shields.io/twitter/follow/agenticraft?style=social)
+  Get Involved
 
-### 🏆 Sponsors
+  - https://github.com/agenticraft/agenticraft/issues - Report bugs & request features
+  - https://github.com/agenticraft/agenticraft/discussions - Ask questions
+  - https://github.com/agenticraft/agenticraft/blob/master/CONTRIBUTING.md
 
-*Coming soon - Sponsor AgenticCraft development*
+  License
 
----
-
-<div align="center">
-  
-**Building powerful AI agents shouldn't be complicated.**
-
-Made with ❤️ by the AgenticCraft team
-
-</div>
+  Business Source License 1.1 (BSL) - Free for non-production use, converts to Apache 2.0 after 4 years.
