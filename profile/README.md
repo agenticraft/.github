@@ -1,77 +1,118 @@
 # AgentiCraft
 
-**Enterprise-grade agentic AI platform with production-ready infrastructure**
+**Enterprise-grade agentic AI platform**
 
-From pilot to production in weeks, not months.
+Build, deploy, and scale AI agents with production-ready infrastructure.
+
+---
 
 ## What is AgentiCraft?
 
-AgentiCraft is an enterprise framework for creating production-ready AI agents. It features a 6-tier SLA-driven mesh architecture with 45 integrated services, 245+ battle-tested patterns across 22 categories, and support for 18 LLM providers.
+AgentiCraft is a full-stack platform for building production-ready AI agents. It provides both agent logic (patterns, coordination) and enterprise infrastructure (security, observability, multi-tenancy) in one unified platform.
 
-## Key Features
+## Platform Overview
 
-### 18 LLM Providers
-- **Core**: OpenAI, Anthropic, Google, Mistral
-- **Performance**: Groq, Together, Fireworks, Cerebras
-- **Enterprise**: Azure OpenAI, AWS Bedrock
-- **Specialized**: Cohere, Perplexity, DeepSeek, xAI
-- **Local/Router**: Ollama, OpenRouter, Nebius
+| Component | Details |
+| --------- | ------- |
+| **LLM Providers** | 18 providers (OpenAI, Anthropic, Google, Mistral, Groq, and more) |
+| **Agent Patterns** | 214+ patterns across 17 categories |
+| **Mesh Services** | 45+ services with defined SLAs |
+| **Security** | 9-layer defense-in-depth architecture |
+| **Protocols** | Native MCP, A2A, and ANP support |
 
-### 245+ Agent Patterns (22 Categories)
-- **Cognitive (39)**: Chain-of-Thought, Tree-of-Thoughts, ReAct, Reflection
-- **Coordination (51)**: Consensus, Voting, Swarm, Debate, Team
-- **Resilience (15)**: Circuit Breaker, Fallback, Retry, Bulkhead
-- **Workflow (14)**: DAG, Saga, State Machine, Event-Driven
+## Key Capabilities
 
-### 6-Tier Mesh Architecture (45 Services)
-- **Critical Tier** (<100ms SLA): Security, Discovery, Observability
-- **Core Tier** (<200ms SLA): Agents, Events, Orchestration
-- **Platform Tier** (<500ms SLA): LLM, Data, Health
-- **Standard Tier** (<1s SLA): A2A, MCP, ANP, Streaming
-- **Background Tier**: Metrics, Evaluation, Cost
-- **Utility Tier**: Governance, HITL, Compliance
+### Agent Patterns (214+)
 
-### Enterprise Infrastructure
-- 9-layer security (OAuth, RBAC, AES-256-GCM, SPIFFE)
-- MCP, A2A, and ANP protocol support
-- 48 REST API modules
+- **Cognitive**: Chain-of-Thought, Tree-of-Thoughts, ReAct, Reflection
+- **Coordination**: Consensus, Swarm, Gossip, Team
+- **Workflow**: Pipeline, StateMachine, DAG, HITL
+- **Resilience**: Circuit Breaker, Retry, Saga, Bulkhead
+- **RAG**: GraphRAG, HybridRAG, AdaptiveRAG
+- **Safety**: Constitutional, Adversarial, Guardrails
+
+### Mesh Services (45+)
+
+| Tier | SLA | Services |
+| ---- | --- | -------- |
+| Critical | 99.99% | Security, Discovery, Observability |
+| Core | 99.95% | Agents, Events, Orchestration |
+| Platform | 99.9% | LLM, Data, MCP |
+| Standard | 99.5% | A2A, Streaming, Patterns |
+
+### Enterprise Features
+
+- Multi-tenancy with per-tenant quotas
+- SOC2, GDPR, HIPAA, ISO27001 compliance controls
 - OpenTelemetry distributed tracing
-- SOC2, GDPR, HIPAA, ISO27001 ready
+- Cost tracking and budget management
+
+## Protocol Support
+
+| Protocol | Purpose | What It Enables |
+| -------- | ------- | --------------- |
+| **MCP** | Agent ↔ Tools | Tool discovery, context sharing, resource management |
+| **A2A** | Agent ↔ Agent | Task delegation, coordination, state sync |
+| **ANP** | Agent ↔ External Networks | Decentralized identity, federated discovery |
 
 ## Quick Start
 
 ```python
 from agenticraft import Craft
 
-# Fluent builder API
+# Create an agent
 agent = (
     Craft.agent("Assistant")
     .model("gpt-4o")
-    .memory(enabled=True)
+    .memory("conversation")
     .tools(["web_search", "calculator"])
     .create()
 )
 
-response = await agent.generate("Hello, world!")
-
-# Or use presets
-analyst = Craft.analyst("DataBot").create()
+response = await agent.run("Analyze this quarterly report")
 ```
 
-## Repositories
+### Multi-Provider Support
 
-| Repository | Description |
-|------------|-------------|
-| [agenticraft](https://github.com/agenticraft/agenticraft) | Core framework (1M+ LOC) |
-| [docs](https://github.com/agenticraft/docs) | Documentation |
-| [examples](https://github.com/agenticraft/examples) | Example implementations |
+```python
+from agenticraft import Craft
 
-## Get Involved
+# OpenAI
+openai_agent = Craft.agent("GPT").model("gpt-4o").create()
 
-- [Issues](https://github.com/agenticraft/agenticraft/issues) - Report bugs & request features
-- [Discussions](https://github.com/agenticraft/agenticraft/discussions) - Ask questions
-- [Contributing](https://github.com/agenticraft/agenticraft/blob/master/CONTRIBUTING.md) - Contribution guide
+# Anthropic Claude
+claude_agent = Craft.agent("Claude").model("claude-3-5-sonnet").create()
 
-## License
+# Google Gemini
+gemini_agent = Craft.agent("Gemini").model("gemini-pro").create()
 
-Business Source License 1.1 (BSL) - Free for development and internal use. Enterprise licenses available for production. Converts to Apache 2.0 after 4 years.
+# Local with Ollama
+local_agent = Craft.agent("Local").model("ollama/llama3").create()
+```
+
+### Multi-Agent Teams
+
+```python
+from agenticraft import Craft
+
+# Create a research team with consensus voting
+team = (
+    Craft.team("MarketResearch")
+    .agents([
+        Craft.analyst("Researcher").model("gpt-4o"),
+        Craft.analyst("Validator").model("claude-3-5-sonnet"),
+        Craft.writer("Synthesizer").model("gemini-pro")
+    ])
+    .strategy("consensus")
+    .create()
+)
+
+report = await team.run("Analyze Q4 market trends and provide recommendations")
+```
+
+## Contact
+
+Contact us for access to the AgentiCraft platform.
+
+- Email: hello@agenticraft.ai
+- Website: agenticraft.ai
