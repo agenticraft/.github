@@ -10,7 +10,7 @@ Build, deploy, and scale AI agents with enterprise-grade security, observability
 
 ---
 
-`214+ Patterns` · `45+ Mesh Services` · `18 LLM Providers` · `9-Layer Security` · `MCP + A2A + ANP`
+`214+ Patterns` · `40+ Mesh Services` · `18 LLM Providers` · `9-Layer Security` · `MCP + A2A + ANP`
 
 ---
 
@@ -35,7 +35,7 @@ Most companies can build a prototype AI agent in days. Getting it to production 
 ├─────────────────────────────────────────────────────────────┤
 │  LLM Providers         18 providers, one interface           │
 ├─────────────────────────────────────────────────────────────┤
-│  Mesh Services         45+ services, 6 SLA tiers             │
+│  Mesh Services         40+ services, 6 SLA tiers             │
 │                        Security · Observability · Events     │
 ├─────────────────────────────────────────────────────────────┤
 │  Agent Layer           214+ patterns, 25+ mixins             │
