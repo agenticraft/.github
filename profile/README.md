@@ -108,8 +108,8 @@ response = await agent.run("Analyze this quarterly report")
 from agenticraft import Craft
 
 openai_agent  = Craft.agent("GPT").model("gpt-4o").create()
-claude_agent  = Craft.agent("Claude").model("claude-3-5-sonnet").create()
-gemini_agent  = Craft.agent("Gemini").model("gemini-pro").create()
+claude_agent  = Craft.agent("Claude").model("claude-sonnet-4-5").create()
+gemini_agent  = Craft.agent("Gemini").model("gemini-3-pro").create()
 local_agent   = Craft.agent("Local").model("ollama/llama3").create()
 ```
 
@@ -122,8 +122,8 @@ team = (
     Craft.team("MarketResearch")
     .agents([
         Craft.analyst("Researcher").model("gpt-4o"),
-        Craft.analyst("Validator").model("claude-3-5-sonnet"),
-        Craft.writer("Synthesizer").model("gemini-pro"),
+        Craft.analyst("Validator").model("claude-sonnet-4-5"),
+        Craft.writer("Synthesizer").model("gemini-3-pro"),
     ])
     .strategy("consensus")
     .create()
