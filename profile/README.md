@@ -56,7 +56,7 @@ Most companies can build a prototype AI agent in days. Getting it to production 
 - **Safety** — Constitutional, Adversarial, Guardrails
 - **Planning** — HTN, MCTS, Temporal Planning
 
-### Mesh Services (45+ with defined SLAs)
+### Mesh Services (40+ with defined SLAs)
 
 | Tier | SLA | Services |
 |------|-----|----------|
