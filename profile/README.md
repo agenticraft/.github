@@ -14,7 +14,7 @@ Build, deploy, and scale AI agents with enterprise-grade security, observability
 
 [![Website](https://img.shields.io/badge/Website-agenticraft.ai-0D9488?style=flat-square)](https://agenticraft.ai)
 [![Python](https://img.shields.io/badge/Python-3.12+-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
-[![License](https://img.shields.io/badge/License-Proprietary-334155?style=flat-square)](https://agenticraft.ai/terms)
+[![License](https://img.shields.io/badge/License-BSL--1.1-334155?style=flat-square)](https://github.com/agenticraft/agenticraft/blob/master/LICENSE-BSL)
 
 ---
 
@@ -34,7 +34,7 @@ Most companies can build a prototype AI agent in days. Getting it to production 
 - **40+ mesh services** with defined SLAs and automatic failover
 - **18 LLM providers** through one unified interface — switch models without changing code
 - **Defense-in-depth security** with compliance controls for SOC 2, GDPR, HIPAA, and ISO 27001
-- **Open protocol support** — MCP, A2A, and ANP for tool integration, agent coordination, and network federation
+- **Open protocol support** — MCP (Model Context Protocol) and A2A (Agent-to-Agent) for tool integration and inter-agent communication
 - **Built-in evaluation** with industry-standard benchmarks
 
 ## Quick Start
