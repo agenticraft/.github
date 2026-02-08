@@ -1,16 +1,22 @@
 <div align="center">
 
-# AgentiCraft
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/agenticraft/agenticraft/master/assets/brand/social/readme-banner.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/agenticraft/agenticraft/master/assets/brand/social/readme-banner.svg">
+  <img alt="AgentiCraft" src="https://raw.githubusercontent.com/agenticraft/agenticraft/master/assets/brand/social/readme-banner.svg" width="100%">
+</picture>
 
-### The Enterprise Multi-Agent Platform
-
-**From pilot to production in weeks, not months.**
+### From pilot to production in weeks, not months.
 
 Build, deploy, and scale AI agents with enterprise-grade security, observability, and governance.
 
 ---
 
-`214+ Patterns` · `40+ Mesh Services` · `18 LLM Providers` · `Defense-in-Depth Security` · `Open Protocol Support`
+`200+ Patterns` · `40+ Mesh Services` · `18 LLM Providers` · `Defense-in-Depth Security` · `Open Protocols`
+
+[![Website](https://img.shields.io/badge/Website-agenticraft.ai-0D9488?style=flat-square)](https://agenticraft.ai)
+[![Python](https://img.shields.io/badge/Python-3.12+-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
+[![License](https://img.shields.io/badge/License-Proprietary-334155?style=flat-square)](https://agenticraft.ai/terms)
 
 ---
 
@@ -26,7 +32,7 @@ Most companies can build a prototype AI agent in days. Getting it to production 
 
 ## What We Offer
 
-- **214+ agent patterns** across reasoning, coordination, workflow, resilience, RAG, safety, and planning
+- **200+ agent patterns** across reasoning, coordination, workflow, resilience, RAG, safety, and planning
 - **40+ mesh services** with defined SLAs and automatic failover
 - **18 LLM providers** through one unified interface — switch models without changing code
 - **Defense-in-depth security** with compliance controls for SOC 2, GDPR, HIPAA, and ISO 27001
@@ -82,6 +88,7 @@ report = await team.run("Analyze Q4 market trends and provide recommendations")
 
 ## Contact
 
+- **Website:** [agenticraft.ai](https://agenticraft.ai)
 - **Email:** hello@agenticraft.ai
 - **Security:** security@agenticraft.ai
-- **Website:** [agenticraft.ai](https://agenticraft.ai)
+- **Twitter:** [@agenticraft](https://x.com/agenticraft)
