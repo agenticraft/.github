@@ -1,9 +1,9 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="profile/readme-banner.svg">
-  <source media="(prefers-color-scheme: light)" srcset="profile/readme-banner.svg">
-  <img alt="AgentiCraft" src="profile/readme-banner.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="readme-banner.svg">
+  <source media="(prefers-color-scheme: light)" srcset="readme-banner.svg">
+  <img alt="AgentiCraft" src="readme-banner.svg" width="100%">
 </picture>
 
 ### From pilot to production in weeks, not months.
