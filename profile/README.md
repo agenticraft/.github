@@ -1,9 +1,9 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/agenticraft/agenticraft/master/assets/brand/social/readme-banner.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/agenticraft/agenticraft/master/assets/brand/social/readme-banner.svg">
-  <img alt="AgentiCraft" src="https://raw.githubusercontent.com/agenticraft/agenticraft/master/assets/brand/social/readme-banner.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="profile/readme-banner.svg">
+  <source media="(prefers-color-scheme: light)" srcset="profile/readme-banner.svg">
+  <img alt="AgentiCraft" src="profile/readme-banner.svg" width="100%">
 </picture>
 
 ### From pilot to production in weeks, not months.
