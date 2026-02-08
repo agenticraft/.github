@@ -6,8 +6,6 @@
   <img alt="AgentiCraft" src="readme-banner.svg" width="100%">
 </picture>
 
-### From pilot to production in weeks, not months.
-
 Build, deploy, and scale AI agents with enterprise-grade security, observability, and governance.
 
 ---
@@ -91,4 +89,3 @@ report = await team.run("Analyze Q4 market trends and provide recommendations")
 - **Website:** [agenticraft.ai](https://agenticraft.ai)
 - **Email:** hello@agenticraft.ai
 - **Security:** security@agenticraft.ai
-- **Twitter:** [@agenticraft](https://x.com/agenticraft)
