@@ -6,7 +6,7 @@
   <img alt="AgentiCraft" src="readme-banner.svg" width="100%">
 </picture>
 
-Build, deploy, and scale AI agents with enterprise-grade security, observability, and governance.
+Build, deploy, and scale AI agents with enterprise-grade security, deployment, and governance.
 
 ---
 
@@ -30,7 +30,7 @@ Most companies can build a prototype AI agent in days. Getting it to production 
 ## What We Offer
 
 - **200+ agent patterns** across reasoning, coordination, workflow, resilience, RAG, safety, and planning
-- **40+ mesh services** with defined SLAs and automatic failover
+- **40+ mesh services** with defined SLAs — security, canary deployment, agent marketplace, API gateway, and more
 - **18 LLM providers** through one unified interface — switch models without changing code
 - **Defense-in-depth security** with enterprise compliance controls
 - **Open protocol support** — MCP (Model Context Protocol) and A2A (Agent-to-Agent) for tool integration and inter-agent communication
