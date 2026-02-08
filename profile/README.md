@@ -14,7 +14,6 @@ Build, deploy, and scale AI agents with enterprise-grade security, observability
 
 [![Website](https://img.shields.io/badge/Website-agenticraft.ai-0D9488?style=flat-square)](https://agenticraft.ai)
 [![Python](https://img.shields.io/badge/Python-3.12+-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
-[![License](https://img.shields.io/badge/License-BSL--1.1-334155?style=flat-square)](https://github.com/agenticraft/agenticraft/blob/master/LICENSE-BSL)
 
 ---
 
