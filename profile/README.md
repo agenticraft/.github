@@ -32,7 +32,7 @@ Most companies can build a prototype AI agent in days. Getting it to production 
 - **200+ agent patterns** across reasoning, coordination, workflow, resilience, RAG, safety, and planning
 - **40+ mesh services** with defined SLAs and automatic failover
 - **18 LLM providers** through one unified interface — switch models without changing code
-- **Defense-in-depth security** with compliance controls for SOC 2, GDPR, HIPAA, and ISO 27001
+- **Defense-in-depth security** with enterprise compliance controls
 - **Open protocol support** — MCP (Model Context Protocol) and A2A (Agent-to-Agent) for tool integration and inter-agent communication
 - **Built-in evaluation** with industry-standard benchmarks
 
