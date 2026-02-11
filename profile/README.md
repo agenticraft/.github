@@ -23,7 +23,7 @@ The enterprise AI agent platform. Build, deploy, and scale production agents wit
 
 Most companies can build a prototype AI agent in days. Getting it to production — secure, reliable, compliant — takes months and often fails entirely.
 
-[88% of AI pilots fail to reach production](https://www.cio.com/article/3850763/88-of-ai-pilots-fail-to-reach-production-but-thats-not-all-on-it.html) (IDC). [86% need tech stack upgrades](https://www.architectureandgovernance.com/artificial-intelligence/new-research-uncovers-top-challenges-in-enterprise-ai-agent-adoption/) for AI agents (Tray.ai). [70-85% of GenAI deployments fail to meet ROI](https://www.nttdata.com/global/en/insights/focus/2024/between-70-85p-of-genai-deployment-efforts-are-failing) (NTT Data).
+88% of AI pilots fail to reach production ([IDC](https://www.cio.com/article/3850763/88-of-ai-pilots-fail-to-reach-production-but-thats-not-all-on-it.html)). 86% need tech stack upgrades for AI agents ([Tray.ai](https://www.architectureandgovernance.com/artificial-intelligence/new-research-uncovers-top-challenges-in-enterprise-ai-agent-adoption/)). 70-85% of GenAI deployments fail to meet ROI ([NTT Data](https://www.nttdata.com/global/en/insights/focus/2024/between-70-85p-of-genai-deployment-efforts-are-failing)).
 
 **AgentiCraft bridges this gap** — providing both AI agent logic and enterprise infrastructure in one unified platform.
 
