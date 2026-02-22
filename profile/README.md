@@ -42,8 +42,8 @@ Standalone libraries extracted from AgentiCraft's fault tolerance research:
 
 | Library | Description |
 |---------|-------------|
+| [stochastic-circuit-breaker](https://github.com/zahere/stochastic-circuit-breaker) | CUSUM-optimal circuit breaker for LLM agents and stochastic systems. 4-state FSM with statistically principled degradation detection and provably minimax detection delay. |
 | [reliability-polynomials](https://github.com/zahere/reliability-polynomials) | Generalized reliability polynomials for quality-weighted network analysis. Fault-dependent crossover, three theorems. |
-| [stochastic-circuit-breaker](https://github.com/zahere/stochastic-circuit-breaker) | CUSUM-optimal circuit breaker for stochastic systems. 4-state FSM, statistically principled detection. |
 
 ## Quick Start
 
