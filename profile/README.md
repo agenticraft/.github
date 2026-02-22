@@ -36,6 +36,15 @@ Most companies can build a prototype AI agent in days. Getting it to production 
 - **Open protocol support** — MCP (Model Context Protocol) and A2A (Agent-to-Agent) for tool integration and inter-agent communication
 - **Built-in evaluation** with industry-standard benchmarks
 
+## Research
+
+Standalone libraries extracted from AgentiCraft's fault tolerance research:
+
+| Library | Description |
+|---------|-------------|
+| [reliability-polynomials](https://github.com/zahere/reliability-polynomials) | Generalized reliability polynomials for quality-weighted network analysis. Fault-dependent crossover, three theorems. |
+| [stochastic-circuit-breaker](https://github.com/zahere/stochastic-circuit-breaker) | CUSUM-optimal circuit breaker for stochastic systems. 4-state FSM, statistically principled detection. |
+
 ## Quick Start
 
 ```python
