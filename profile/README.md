@@ -36,12 +36,13 @@ Most companies can build a prototype AI agent in days. Getting it to production 
 - **Open protocol support** — MCP (Model Context Protocol) and A2A (Agent-to-Agent) for tool integration and inter-agent communication
 - **Built-in evaluation** with industry-standard benchmarks
 
-## Research
+## Open Source
 
-Standalone libraries extracted from AgentiCraft's fault tolerance research:
+Standalone libraries extracted from AgentiCraft's research and formal foundations:
 
 | Library | Description |
 |---------|-------------|
+| [agenticraft-foundation](https://github.com/agenticraft/agenticraft-foundation) | Formally verified mathematical foundations for multi-agent AI coordination. CSP process algebra, multiparty session types, spectral topology, CTL model checking, probabilistic verification. 1,165 tests, zero runtime dependencies. |
 | [stochastic-circuit-breaker](https://github.com/zahere/stochastic-circuit-breaker) | CUSUM-optimal circuit breaker for LLM agents and stochastic systems. 4-state FSM with statistically principled degradation detection and provably minimax detection delay. |
 | [reliability-polynomials](https://github.com/zahere/reliability-polynomials) | Generalized reliability polynomials for quality-weighted network analysis. Fault-dependent crossover, three theorems. |
 
