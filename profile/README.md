@@ -73,7 +73,7 @@ from agenticraft import Craft
 
 openai_agent  = Craft.agent("GPT").model("gpt-5.4").create()
 claude_agent  = Craft.agent("Claude").model("claude-sonnet-4-6").create()
-gemini_agent  = Craft.agent("Gemini").model("gemini-2.5-pro").create()
+gemini_agent  = Craft.agent("Gemini").model("gemini-3.1-pro-preview").create()
 local_agent   = Craft.agent("Local").model("ollama/llama3").create()
 ```
 
@@ -87,7 +87,7 @@ team = (
     .agents([
         Craft.analyst("Researcher").model("gpt-5.4"),
         Craft.analyst("Validator").model("claude-sonnet-4-6"),
-        Craft.writer("Synthesizer").model("gemini-2.5-pro"),
+        Craft.writer("Synthesizer").model("gemini-3.1-pro-preview"),
     ])
     .strategy("consensus")
     .create()
