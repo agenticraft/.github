@@ -13,6 +13,7 @@ The enterprise AI agent platform. Build, deploy, and scale production agents wit
 `200+ Patterns` · `40+ Mesh Services` · `18 LLM Providers` · `Defense-in-Depth Security` · `Open Protocols`
 
 [![Website](https://img.shields.io/badge/agenticraft.ai-0D9488?style=flat-square&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0Ij48cG9seWdvbiBwb2ludHM9IjM5LDcgNTMsMjQgMzYsMjgiIGZpbGw9IndoaXRlIiBvcGFjaXR5PSIwLjg1Ii8+PHBvbHlnb24gcG9pbnRzPSIzOSw3IDEyLDMzIDM2LDI4IiBmaWxsPSJ3aGl0ZSIgb3BhY2l0eT0iMC43Ii8+PHBvbHlnb24gcG9pbnRzPSI1MywyNCA0Nyw0OSAzNiwyOCIgZmlsbD0id2hpdGUiIG9wYWNpdHk9IjAuNzUiLz48cG9seWdvbiBwb2ludHM9IjQ3LDQ5IDIyLDU0IDM2LDI4IiBmaWxsPSJ3aGl0ZSIgb3BhY2l0eT0iMC45Ii8+PHBvbHlnb24gcG9pbnRzPSIyMiw1NCAxMiwzMyAzNiwyOCIgZmlsbD0id2hpdGUiIG9wYWNpdHk9IjAuOTUiLz48Y2lyY2xlIGN4PSIzOSIgY3k9IjciIHI9IjMiIGZpbGw9IndoaXRlIi8+PGNpcmNsZSBjeD0iNTMiIGN5PSIyNCIgcj0iMi44IiBmaWxsPSJ3aGl0ZSIvPjxjaXJjbGUgY3g9IjQ3IiBjeT0iNDkiIHI9IjIuOCIgZmlsbD0id2hpdGUiLz48Y2lyY2xlIGN4PSIyMiIgY3k9IjU0IiByPSIyLjgiIGZpbGw9IndoaXRlIi8+PGNpcmNsZSBjeD0iMTIiIGN5PSIzMyIgcj0iMyIgZmlsbD0id2hpdGUiLz48Y2lyY2xlIGN4PSIzNiIgY3k9IjI4IiByPSIzLjIiIGZpbGw9IndoaXRlIi8+PC9zdmc+)](https://agenticraft.ai)
+[![Docs](https://img.shields.io/badge/docs-0D9488?style=flat-square&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0Ij48cG9seWdvbiBwb2ludHM9IjM5LDcgNTMsMjQgMzYsMjgiIGZpbGw9IndoaXRlIiBvcGFjaXR5PSIwLjg1Ii8+PHBvbHlnb24gcG9pbnRzPSIzOSw3IDEyLDMzIDM2LDI4IiBmaWxsPSJ3aGl0ZSIgb3BhY2l0eT0iMC43Ii8+PHBvbHlnb24gcG9pbnRzPSI1MywyNCA0Nyw0OSAzNiwyOCIgZmlsbD0id2hpdGUiIG9wYWNpdHk9IjAuNzUiLz48cG9seWdvbiBwb2ludHM9IjQ3LDQ5IDIyLDU0IDM2LDI4IiBmaWxsPSJ3aGl0ZSIgb3BhY2l0eT0iMC45Ii8+PHBvbHlnb24gcG9pbnRzPSIyMiw1NCAxMiwzMyAzNiwyOCIgZmlsbD0id2hpdGUiIG9wYWNpdHk9IjAuOTUiLz48Y2lyY2xlIGN4PSIzOSIgY3k9IjciIHI9IjMiIGZpbGw9IndoaXRlIi8+PGNpcmNsZSBjeD0iNTMiIGN5PSIyNCIgcj0iMi44IiBmaWxsPSJ3aGl0ZSIvPjxjaXJjbGUgY3g9IjQ3IiBjeT0iNDkiIHI9IjIuOCIgZmlsbD0id2hpdGUiLz48Y2lyY2xlIGN4PSIyMiIgY3k9IjU0IiByPSIyLjgiIGZpbGw9IndoaXRlIi8+PGNpcmNsZSBjeD0iMTIiIGN5PSIzMyIgcj0iMyIgZmlsbD0id2hpdGUiLz48Y2lyY2xlIGN4PSIzNiIgY3k9IjI4IiByPSIzLjIiIGZpbGw9IndoaXRlIi8+PC9zdmc+)](https://agenticraft.ai/docs)
 [![Python](https://img.shields.io/badge/Python-3.12+-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
 
 ---
@@ -43,6 +44,8 @@ Standalone libraries extracted from AgentiCraft's research and formal foundation
 | Library | Description |
 |---------|-------------|
 | [agenticraft-foundation](https://github.com/agenticraft/agenticraft-foundation) | Formally verified mathematical foundations for multi-agent AI coordination. CSP process algebra, multiparty session types, spectral topology, CTL model checking, probabilistic verification. 1,165 tests, zero runtime dependencies. |
+| [agenticraft-llm](https://github.com/agenticraft/agenticraft-llm) | Production-grade LLM provider abstraction. 14 providers, cost-aware routing with Thompson sampling, multi-key rotation, circuit breakers, rate limiting, OpenAI-compatible gateway. |
+| [agenticraft-types](https://github.com/agenticraft/agenticraft-types) | Shared type definitions for AgentiCraft packages. Pydantic v2 models, Protocol classes, 12-class error hierarchy, configuration schemas. Under 1,000 LOC, zero business logic. |
 | [stochastic-circuit-breaker](https://github.com/zahere/stochastic-circuit-breaker) | CUSUM-optimal circuit breaker for LLM agents and stochastic systems. 4-state FSM with statistically principled degradation detection and provably minimax detection delay. |
 | [reliability-polynomials](https://github.com/zahere/reliability-polynomials) | Generalized reliability polynomials for quality-weighted network analysis. Fault-dependent crossover, three theorems. |
 
@@ -54,7 +57,7 @@ from agenticraft import Craft
 # Create an agent with the fluent builder API
 agent = (
     Craft.agent("Assistant")
-    .model("gpt-4o")
+    .model("gpt-5.4")
     .memory("conversation")
     .tools(["web_search", "calculator"])
     .create()
@@ -68,9 +71,9 @@ response = await agent.run("Analyze this quarterly report")
 ```python
 from agenticraft import Craft
 
-openai_agent  = Craft.agent("GPT").model("gpt-4o").create()
-claude_agent  = Craft.agent("Claude").model("claude-sonnet-4-5").create()
-gemini_agent  = Craft.agent("Gemini").model("gemini-3-pro").create()
+openai_agent  = Craft.agent("GPT").model("gpt-5.4").create()
+claude_agent  = Craft.agent("Claude").model("claude-sonnet-4-6").create()
+gemini_agent  = Craft.agent("Gemini").model("gemini-2.5-pro").create()
 local_agent   = Craft.agent("Local").model("ollama/llama3").create()
 ```
 
@@ -82,9 +85,9 @@ from agenticraft import Craft
 team = (
     Craft.team("MarketResearch")
     .agents([
-        Craft.analyst("Researcher").model("gpt-4o"),
-        Craft.analyst("Validator").model("claude-sonnet-4-5"),
-        Craft.writer("Synthesizer").model("gemini-3-pro"),
+        Craft.analyst("Researcher").model("gpt-5.4"),
+        Craft.analyst("Validator").model("claude-sonnet-4-6"),
+        Craft.writer("Synthesizer").model("gemini-2.5-pro"),
     ])
     .strategy("consensus")
     .create()
@@ -92,6 +95,13 @@ team = (
 
 report = await team.run("Analyze Q4 market trends and provide recommendations")
 ```
+
+## Documentation
+
+- **[Docs Hub](https://agenticraft.ai/docs/)** — unified documentation for all packages
+- **[Foundation](https://agenticraft.ai/docs/foundation/)** — formal algebra, topology, verification
+- **[LLM](https://agenticraft.ai/docs/llm/)** — providers, routing, resilience, gateway
+- **[Types](https://agenticraft.ai/docs/types/)** — models, protocols, errors, config
 
 ## Contact
 
