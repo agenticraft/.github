@@ -6,105 +6,103 @@
   <img alt="AgentiCraft" src="readme-banner.svg" width="100%">
 </picture>
 
-The enterprise AI agent platform. Build, deploy, and scale production agents with enterprise-grade security, deployment, and governance.
+The production infrastructure layer for AI agents. Build, deploy, and scale multi-agent systems with a high-performance Rust data plane, formal verification, and enterprise-grade governance.
 
 ---
 
-`200+ Patterns` · `40+ Mesh Services` · `18 LLM Providers` · `Defense-in-Depth Security` · `Open Protocols`
+`Rust Data Plane` · `200+ Patterns` · `40+ Mesh Services` · `18 LLM Providers` · `Formal Verification` · `MCP + A2A`
 
 [![Website](https://img.shields.io/badge/agenticraft.ai-0D9488?style=flat-square&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0Ij48cG9seWdvbiBwb2ludHM9IjM5LDcgNTMsMjQgMzYsMjgiIGZpbGw9IndoaXRlIiBvcGFjaXR5PSIwLjg1Ii8+PHBvbHlnb24gcG9pbnRzPSIzOSw3IDEyLDMzIDM2LDI4IiBmaWxsPSJ3aGl0ZSIgb3BhY2l0eT0iMC43Ii8+PHBvbHlnb24gcG9pbnRzPSI1MywyNCA0Nyw0OSAzNiwyOCIgZmlsbD0id2hpdGUiIG9wYWNpdHk9IjAuNzUiLz48cG9seWdvbiBwb2ludHM9IjQ3LDQ5IDIyLDU0IDM2LDI4IiBmaWxsPSJ3aGl0ZSIgb3BhY2l0eT0iMC45Ii8+PHBvbHlnb24gcG9pbnRzPSIyMiw1NCAxMiwzMyAzNiwyOCIgZmlsbD0id2hpdGUiIG9wYWNpdHk9IjAuOTUiLz48Y2lyY2xlIGN4PSIzOSIgY3k9IjciIHI9IjMiIGZpbGw9IndoaXRlIi8+PGNpcmNsZSBjeD0iNTMiIGN5PSIyNCIgcj0iMi44IiBmaWxsPSJ3aGl0ZSIvPjxjaXJjbGUgY3g9IjQ3IiBjeT0iNDkiIHI9IjIuOCIgZmlsbD0id2hpdGUiLz48Y2lyY2xlIGN4PSIyMiIgY3k9IjU0IiByPSIyLjgiIGZpbGw9IndoaXRlIi8+PGNpcmNsZSBjeD0iMTIiIGN5PSIzMyIgcj0iMyIgZmlsbD0id2hpdGUiLz48Y2lyY2xlIGN4PSIzNiIgY3k9IjI4IiByPSIzLjIiIGZpbGw9IndoaXRlIi8+PC9zdmc+)](https://agenticraft.ai)
 [![Docs](https://img.shields.io/badge/docs-0D9488?style=flat-square&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0Ij48cG9seWdvbiBwb2ludHM9IjM5LDcgNTMsMjQgMzYsMjgiIGZpbGw9IndoaXRlIiBvcGFjaXR5PSIwLjg1Ii8+PHBvbHlnb24gcG9pbnRzPSIzOSw3IDEyLDMzIDM2LDI4IiBmaWxsPSJ3aGl0ZSIgb3BhY2l0eT0iMC43Ii8+PHBvbHlnb24gcG9pbnRzPSI1MywyNCA0Nyw0OSAzNiwyOCIgZmlsbD0id2hpdGUiIG9wYWNpdHk9IjAuNzUiLz48cG9seWdvbiBwb2ludHM9IjQ3LDQ5IDIyLDU0IDM2LDI4IiBmaWxsPSJ3aGl0ZSIgb3BhY2l0eT0iMC45Ii8+PHBvbHlnb24gcG9pbnRzPSIyMiw1NCAxMiwzMyAzNiwyOCIgZmlsbD0id2hpdGUiIG9wYWNpdHk9IjAuOTUiLz48Y2lyY2xlIGN4PSIzOSIgY3k9IjciIHI9IjMiIGZpbGw9IndoaXRlIi8+PGNpcmNsZSBjeD0iNTMiIGN5PSIyNCIgcj0iMi44IiBmaWxsPSJ3aGl0ZSIvPjxjaXJjbGUgY3g9IjQ3IiBjeT0iNDkiIHI9IjIuOCIgZmlsbD0id2hpdGUiLz48Y2lyY2xlIGN4PSIyMiIgY3k9IjU0IiByPSIyLjgiIGZpbGw9IndoaXRlIi8+PGNpcmNsZSBjeD0iMTIiIGN5PSIzMyIgcj0iMyIgZmlsbD0id2hpdGUiLz48Y2lyY2xlIGN4PSIzNiIgY3k9IjI4IiByPSIzLjIiIGZpbGw9IndoaXRlIi8+PC9zdmc+)](https://agenticraft.ai/docs)
+[![Blog](https://img.shields.io/badge/blog-0D9488?style=flat-square&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0Ij48cG9seWdvbiBwb2ludHM9IjM5LDcgNTMsMjQgMzYsMjgiIGZpbGw9IndoaXRlIiBvcGFjaXR5PSIwLjg1Ii8+PHBvbHlnb24gcG9pbnRzPSIzOSw3IDEyLDMzIDM2LDI4IiBmaWxsPSJ3aGl0ZSIgb3BhY2l0eT0iMC43Ii8+PHBvbHlnb24gcG9pbnRzPSI1MywyNCA0Nyw0OSAzNiwyOCIgZmlsbD0id2hpdGUiIG9wYWNpdHk9IjAuNzUiLz48cG9seWdvbiBwb2ludHM9IjQ3LDQ5IDIyLDU0IDM2LDI4IiBmaWxsPSJ3aGl0ZSIgb3BhY2l0eT0iMC45Ii8+PHBvbHlnb24gcG9pbnRzPSIyMiw1NCAxMiwzMyAzNiwyOCIgZmlsbD0id2hpdGUiIG9wYWNpdHk9IjAuOTUiLz48Y2lyY2xlIGN4PSIzOSIgY3k9IjciIHI9IjMiIGZpbGw9IndoaXRlIi8+PGNpcmNsZSBjeD0iNTMiIGN5PSIyNCIgcj0iMi44IiBmaWxsPSJ3aGl0ZSIvPjxjaXJjbGUgY3g9IjQ3IiBjeT0iNDkiIHI9IjIuOCIgZmlsbD0id2hpdGUiLz48Y2lyY2xlIGN4PSIyMiIgY3k9IjU0IiByPSIyLjgiIGZpbGw9IndoaXRlIi8+PGNpcmNsZSBjeD0iMTIiIGN5PSIzMyIgcj0iMyIgZmlsbD0id2hpdGUiLz48Y2lyY2xlIGN4PSIzNiIgY3k9IjI4IiByPSIzLjIiIGZpbGw9IndoaXRlIi8+PC9zdmc+)](https://agenticraft.ai/blog)
 [![Python](https://img.shields.io/badge/Python-3.12+-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
 
 ---
 
 </div>
 
-## The Challenge
+## The Problem
 
-Most companies can build a prototype AI agent in days. Getting it to production — secure, reliable, compliant — takes months and often fails entirely.
+88% of AI pilots never reach production. The bottleneck isn't the models — it's the infrastructure around them. Every team that gets serious about production agents ends up building the same operational stack from scratch: observability, reliability, cost control, security, deployment.
 
-88% of AI pilots fail to reach production ([IDC](https://www.cio.com/article/3850763/88-of-ai-pilots-fail-to-reach-production-but-thats-not-all-on-it.html)). 86% need tech stack upgrades for AI agents ([Tray.ai](https://www.architectureandgovernance.com/artificial-intelligence/new-research-uncovers-top-challenges-in-enterprise-ai-agent-adoption/)). 70-85% of GenAI deployments fail to meet ROI ([NTT Data](https://www.nttdata.com/global/en/insights/focus/2024/between-70-85p-of-genai-deployment-efforts-are-failing)).
+**AgentiCraft is that stack.** One platform. One command. Any scale.
 
-**AgentiCraft bridges this gap** — providing both AI agent logic and enterprise infrastructure in one unified platform.
+## What Makes This Different
 
-## What We Offer
+**High-performance Rust data plane.** A 29-stage middleware pipeline processes every agent request at microsecond latency — intelligent provider routing, PII masking, budget enforcement, circuit breakers, and compliance audit trails. Policy enforcement happens in the data plane, not in Python.
 
-- **200+ agent patterns** across reasoning, coordination, workflow, resilience, RAG, safety, and planning
-- **40+ mesh services** with defined SLAs — security, canary deployment, agent marketplace, API gateway, and more
-- **18 LLM providers** through one unified interface — switch models without changing code
-- **Defense-in-depth security** with enterprise compliance controls
-- **Open protocol support** — MCP (Model Context Protocol) and A2A (Agent-to-Agent) for tool integration and inter-agent communication
-- **Built-in evaluation** with industry-standard benchmarks
+**Formal verification.** Agent protocols are verified before deployment. If a coordination pattern has a deadlock or a protocol violation, you find it at compile time — not in a 3 AM incident.
 
-## Open Source
+**One file, any platform.** Define your entire multi-agent system in `app.yaml` — agents, topology, workflows, policies, plugins. The runtime compiles it into infrastructure and deploys it on a laptop, Docker, Kubernetes, or an edge device.
 
-Standalone libraries extracted from AgentiCraft's research and formal foundations:
+**Research-backed reliability.** In our fault tolerance experiments, mesh-coordinated agents maintained 100% task completion with zero cascade failures across all tested failure rates. Hub-and-spoke dropped to 82% at 20% failure rate and 72% at 30%. The architecture isn't theoretical — it's tested.
+
+## Architecture
+
+| Layer | Name | What It Does |
+|-------|------|-------------|
+| 0 | **Foundation** | Formal verification, session types, topology analysis |
+| 1 | **Transport** | Async messaging between agents |
+| 2 | **Data Plane** | Rust proxy — per-request enforcement at microsecond latency |
+| 3 | **Control Plane** | 40+ mesh services — orchestration, policies, LLM management |
+| 4 | **Runtime** | Universal deployment — laptop, Docker, Kubernetes, edge |
+| 5 | **Developer Experience** | `craft` CLI, SDK, templates, test harness |
+| 6 | **App Framework** | Declarative app manifest, plugin system, marketplace |
+| 7 | **Products** | End-user applications — bots, dashboards, enterprise tools |
+
+## Define Your System
+
+```yaml
+# app.yaml — agents, topology, workflows, policies in one file
+name: research-team
+agents:
+  - id: researcher
+    capabilities: [web_search, paper_analysis]
+    models: { default: gpt-5-mini, for_analysis: gpt-5.4 }
+    memory: { tiers: { hot: { backend: redis } } }
+    autonomy: { level: 0.9 }
+
+  - id: analyst
+    capabilities: [data_analysis, visualization]
+
+topology:
+  connections:
+    - { from: researcher, to: analyst, type: delegate }
+
+workflows:
+  - id: deep-dive
+    pattern: pipeline
+    steps:
+      - { id: search, agent: researcher }
+      - { id: analyze, agent: analyst }
+
+policies:
+  budgets: { org: { monthly_usd: 10.0 } }
+  guardrails: { pii: { action: mask } }
+  sla: { researcher: core, analyst: standard }
+```
+
+```bash
+craft start --app app.yaml
+```
+
+## By the Numbers
+
+- **200+ production patterns** — reasoning, coordination, workflow, resilience, RAG, safety, planning
+- **40+ mesh services** with defined SLAs — security, deployment, gateway, observability, and more
+- **18 LLM providers** with automatic failover — OpenAI, Anthropic, Google, Mistral, Azure OpenAI, Ollama, and 12 more
+- **MCP + A2A native** — open protocols for tool integration and inter-agent communication
+- **3 plugin tiers** — agent, app, and middleware plugins for extensibility without forking
+
+## Public Libraries
 
 | Library | Description |
 |---------|-------------|
-| [agenticraft-foundation](https://github.com/agenticraft/agenticraft-foundation) | Formally verified mathematical foundations for multi-agent AI coordination. CSP process algebra, multiparty session types, spectral topology, CTL model checking, probabilistic verification. 1,165 tests, zero runtime dependencies. |
-| [agenticraft-llm](https://github.com/agenticraft/agenticraft-llm) | Production-grade LLM provider abstraction. 14 providers, cost-aware routing with Thompson sampling, multi-key rotation, circuit breakers, rate limiting, OpenAI-compatible gateway. |
-| [agenticraft-types](https://github.com/agenticraft/agenticraft-types) | Shared type definitions for AgentiCraft packages. Pydantic v2 models, Protocol classes, 12-class error hierarchy, configuration schemas. Under 1,000 LOC, zero business logic. |
-| [stochastic-circuit-breaker](https://github.com/zahere/stochastic-circuit-breaker) | CUSUM-optimal circuit breaker for LLM agents and stochastic systems. 4-state FSM with statistically principled degradation detection and provably minimax detection delay. |
-| [reliability-polynomials](https://github.com/zahere/reliability-polynomials) | Generalized reliability polynomials for quality-weighted network analysis. Fault-dependent crossover, three theorems. |
+| [agenticraft-foundation](https://github.com/agenticraft/agenticraft-foundation) | Formally verified mathematical foundations for multi-agent AI coordination. Process algebra, session types, spectral topology, temporal logic. 1,165 tests, zero runtime dependencies. |
 
-## Quick Start
+## Links
 
-```python
-from agenticraft import Craft
-
-# Create an agent with the fluent builder API
-agent = (
-    Craft.agent("Assistant")
-    .model("gpt-5.4")
-    .memory("conversation")
-    .tools(["web_search", "calculator"])
-    .create()
-)
-
-response = await agent.run("Analyze this quarterly report")
-```
-
-### Multi-Provider Support
-
-```python
-from agenticraft import Craft
-
-openai_agent  = Craft.agent("GPT").model("gpt-5.4").create()
-claude_agent  = Craft.agent("Claude").model("claude-sonnet-4-6").create()
-gemini_agent  = Craft.agent("Gemini").model("gemini-3.1-pro-preview").create()
-local_agent   = Craft.agent("Local").model("ollama/llama3").create()
-```
-
-### Multi-Agent Teams
-
-```python
-from agenticraft import Craft
-
-team = (
-    Craft.team("MarketResearch")
-    .agents([
-        Craft.analyst("Researcher").model("gpt-5.4"),
-        Craft.analyst("Validator").model("claude-sonnet-4-6"),
-        Craft.writer("Synthesizer").model("gemini-3.1-pro-preview"),
-    ])
-    .strategy("consensus")
-    .create()
-)
-
-report = await team.run("Analyze Q4 market trends and provide recommendations")
-```
-
-## Documentation
-
-- **[Docs Hub](https://agenticraft.ai/docs/)** — unified documentation for all packages
-- **[Foundation](https://agenticraft.ai/docs/foundation/)** — formal algebra, topology, verification
-- **[LLM](https://agenticraft.ai/docs/llm/)** — providers, routing, resilience, gateway
-- **[Types](https://agenticraft.ai/docs/types/)** — models, protocols, errors, config
-
-## Contact
-
-- **Website:** [agenticraft.ai](https://agenticraft.ai)
+- **[Website](https://agenticraft.ai)** — platform overview and early access
+- **[Blog](https://agenticraft.ai/blog)** — architecture decisions, research findings, technical deep dives
+- **[Foundation Docs](https://agenticraft.ai/docs/foundation/)** — formal verification toolkit
 - **Email:** hello@agenticraft.ai
-- **Security:** security@agenticraft.ai
