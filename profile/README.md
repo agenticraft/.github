@@ -10,7 +10,7 @@ The production infrastructure layer for AI agents. Build, deploy, and scale mult
 
 ---
 
-`Rust Data Plane` · `200+ Patterns` · `40+ Mesh Services` · `18 LLM Providers` · `Formal Verification` · `MCP + A2A`
+`Rust Data Plane` · `100+ Patterns` · `60+ Mesh Services` · `17 LLM Providers` · `Formal Verification` · `MCP + A2A`
 
 [![Website](https://img.shields.io/badge/agenticraft.ai-0D9488?style=flat-square&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0Ij48cG9seWdvbiBwb2ludHM9IjM5LDcgNTMsMjQgMzYsMjgiIGZpbGw9IndoaXRlIiBvcGFjaXR5PSIwLjg1Ii8+PHBvbHlnb24gcG9pbnRzPSIzOSw3IDEyLDMzIDM2LDI4IiBmaWxsPSJ3aGl0ZSIgb3BhY2l0eT0iMC43Ii8+PHBvbHlnb24gcG9pbnRzPSI1MywyNCA0Nyw0OSAzNiwyOCIgZmlsbD0id2hpdGUiIG9wYWNpdHk9IjAuNzUiLz48cG9seWdvbiBwb2ludHM9IjQ3LDQ5IDIyLDU0IDM2LDI4IiBmaWxsPSJ3aGl0ZSIgb3BhY2l0eT0iMC45Ii8+PHBvbHlnb24gcG9pbnRzPSIyMiw1NCAxMiwzMyAzNiwyOCIgZmlsbD0id2hpdGUiIG9wYWNpdHk9IjAuOTUiLz48Y2lyY2xlIGN4PSIzOSIgY3k9IjciIHI9IjMiIGZpbGw9IndoaXRlIi8+PGNpcmNsZSBjeD0iNTMiIGN5PSIyNCIgcj0iMi44IiBmaWxsPSJ3aGl0ZSIvPjxjaXJjbGUgY3g9IjQ3IiBjeT0iNDkiIHI9IjIuOCIgZmlsbD0id2hpdGUiLz48Y2lyY2xlIGN4PSIyMiIgY3k9IjU0IiByPSIyLjgiIGZpbGw9IndoaXRlIi8+PGNpcmNsZSBjeD0iMTIiIGN5PSIzMyIgcj0iMyIgZmlsbD0id2hpdGUiLz48Y2lyY2xlIGN4PSIzNiIgY3k9IjI4IiByPSIzLjIiIGZpbGw9IndoaXRlIi8+PC9zdmc+)](https://agenticraft.ai)
 [![Docs](https://img.shields.io/badge/docs-0D9488?style=flat-square&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0Ij48cG9seWdvbiBwb2ludHM9IjM5LDcgNTMsMjQgMzYsMjgiIGZpbGw9IndoaXRlIiBvcGFjaXR5PSIwLjg1Ii8+PHBvbHlnb24gcG9pbnRzPSIzOSw3IDEyLDMzIDM2LDI4IiBmaWxsPSJ3aGl0ZSIgb3BhY2l0eT0iMC43Ii8+PHBvbHlnb24gcG9pbnRzPSI1MywyNCA0Nyw0OSAzNiwyOCIgZmlsbD0id2hpdGUiIG9wYWNpdHk9IjAuNzUiLz48cG9seWdvbiBwb2ludHM9IjQ3LDQ5IDIyLDU0IDM2LDI4IiBmaWxsPSJ3aGl0ZSIgb3BhY2l0eT0iMC45Ii8+PHBvbHlnb24gcG9pbnRzPSIyMiw1NCAxMiwzMyAzNiwyOCIgZmlsbD0id2hpdGUiIG9wYWNpdHk9IjAuOTUiLz48Y2lyY2xlIGN4PSIzOSIgY3k9IjciIHI9IjMiIGZpbGw9IndoaXRlIi8+PGNpcmNsZSBjeD0iNTMiIGN5PSIyNCIgcj0iMi44IiBmaWxsPSJ3aGl0ZSIvPjxjaXJjbGUgY3g9IjQ3IiBjeT0iNDkiIHI9IjIuOCIgZmlsbD0id2hpdGUiLz48Y2lyY2xlIGN4PSIyMiIgY3k9IjU0IiByPSIyLjgiIGZpbGw9IndoaXRlIi8+PGNpcmNsZSBjeD0iMTIiIGN5PSIzMyIgcj0iMyIgZmlsbD0id2hpdGUiLz48Y2lyY2xlIGN4PSIzNiIgY3k9IjI4IiByPSIzLjIiIGZpbGw9IndoaXRlIi8+PC9zdmc+)](https://agenticraft.ai/docs)
@@ -44,7 +44,7 @@ The production infrastructure layer for AI agents. Build, deploy, and scale mult
 | 0 | **Foundation** | Formal verification, session types, topology analysis |
 | 1 | **Transport** | Async messaging between agents |
 | 2 | **Data Plane** | Rust proxy — per-request enforcement at microsecond latency |
-| 3 | **Control Plane** | 40+ mesh services — orchestration, policies, LLM management |
+| 3 | **Control Plane** | 60+ mesh services — orchestration, policies, LLM management |
 | 4 | **Runtime** | Universal deployment — laptop, Docker, Kubernetes, edge |
 | 5 | **Developer Experience** | `craft` CLI, SDK, templates, test harness |
 | 6 | **App Framework** | Declarative app manifest, plugin system, marketplace |
@@ -88,9 +88,9 @@ craft start --app app.yaml
 
 ## By the Numbers
 
-- **200+ production patterns** — reasoning, coordination, workflow, resilience, RAG, safety, planning
-- **40+ mesh services** with defined SLAs — security, deployment, gateway, observability, and more
-- **18 LLM providers** with automatic failover — OpenAI, Anthropic, Google, Mistral, Azure OpenAI, Ollama, and 12 more
+- **100+ production patterns** — reasoning, coordination, workflow, resilience, RAG, safety, planning
+- **60+ mesh services** with defined SLAs — security, deployment, gateway, observability, and more
+- **17 LLM providers** with automatic failover — OpenAI, Anthropic, Google, Mistral, Azure OpenAI, Ollama, and 11 more
 - **MCP + A2A native** — open protocols for tool integration and inter-agent communication
 - **3 plugin tiers** — agent, app, and middleware plugins for extensibility without forking
 
