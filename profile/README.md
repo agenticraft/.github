@@ -10,7 +10,7 @@ The production infrastructure layer for AI agents. Build, deploy, and scale mult
 
 ---
 
-`Rust Data Plane` · `100+ Patterns` · `60+ Mesh Services` · `17 LLM Providers` · `Formal Verification` · `MCP + A2A`
+`Rust Data Plane` · `100+ Patterns` · `60+ Mesh Services` · `18 LLM Providers` · `Formal Verification` · `MCP + A2A`
 
 [![Website](https://img.shields.io/badge/agenticraft.ai-0D9488?style=flat-square&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0Ij48cG9seWdvbiBwb2ludHM9IjM5LDcgNTMsMjQgMzYsMjgiIGZpbGw9IndoaXRlIiBvcGFjaXR5PSIwLjg1Ii8+PHBvbHlnb24gcG9pbnRzPSIzOSw3IDEyLDMzIDM2LDI4IiBmaWxsPSJ3aGl0ZSIgb3BhY2l0eT0iMC43Ii8+PHBvbHlnb24gcG9pbnRzPSI1MywyNCA0Nyw0OSAzNiwyOCIgZmlsbD0id2hpdGUiIG9wYWNpdHk9IjAuNzUiLz48cG9seWdvbiBwb2ludHM9IjQ3LDQ5IDIyLDU0IDM2LDI4IiBmaWxsPSJ3aGl0ZSIgb3BhY2l0eT0iMC45Ii8+PHBvbHlnb24gcG9pbnRzPSIyMiw1NCAxMiwzMyAzNiwyOCIgZmlsbD0id2hpdGUiIG9wYWNpdHk9IjAuOTUiLz48Y2lyY2xlIGN4PSIzOSIgY3k9IjciIHI9IjMiIGZpbGw9IndoaXRlIi8+PGNpcmNsZSBjeD0iNTMiIGN5PSIyNCIgcj0iMi44IiBmaWxsPSJ3aGl0ZSIvPjxjaXJjbGUgY3g9IjQ3IiBjeT0iNDkiIHI9IjIuOCIgZmlsbD0id2hpdGUiLz48Y2lyY2xlIGN4PSIyMiIgY3k9IjU0IiByPSIyLjgiIGZpbGw9IndoaXRlIi8+PGNpcmNsZSBjeD0iMTIiIGN5PSIzMyIgcj0iMyIgZmlsbD0id2hpdGUiLz48Y2lyY2xlIGN4PSIzNiIgY3k9IjI4IiByPSIzLjIiIGZpbGw9IndoaXRlIi8+PC9zdmc+)](https://agenticraft.ai)
 [![Docs](https://img.shields.io/badge/docs-0D9488?style=flat-square&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0Ij48cG9seWdvbiBwb2ludHM9IjM5LDcgNTMsMjQgMzYsMjgiIGZpbGw9IndoaXRlIiBvcGFjaXR5PSIwLjg1Ii8+PHBvbHlnb24gcG9pbnRzPSIzOSw3IDEyLDMzIDM2LDI4IiBmaWxsPSJ3aGl0ZSIgb3BhY2l0eT0iMC43Ii8+PHBvbHlnb24gcG9pbnRzPSI1MywyNCA0Nyw0OSAzNiwyOCIgZmlsbD0id2hpdGUiIG9wYWNpdHk9IjAuNzUiLz48cG9seWdvbiBwb2ludHM9IjQ3LDQ5IDIyLDU0IDM2LDI4IiBmaWxsPSJ3aGl0ZSIgb3BhY2l0eT0iMC45Ii8+PHBvbHlnb24gcG9pbnRzPSIyMiw1NCAxMiwzMyAzNiwyOCIgZmlsbD0id2hpdGUiIG9wYWNpdHk9IjAuOTUiLz48Y2lyY2xlIGN4PSIzOSIgY3k9IjciIHI9IjMiIGZpbGw9IndoaXRlIi8+PGNpcmNsZSBjeD0iNTMiIGN5PSIyNCIgcj0iMi44IiBmaWxsPSJ3aGl0ZSIvPjxjaXJjbGUgY3g9IjQ3IiBjeT0iNDkiIHI9IjIuOCIgZmlsbD0id2hpdGUiLz48Y2lyY2xlIGN4PSIyMiIgY3k9IjU0IiByPSIyLjgiIGZpbGw9IndoaXRlIi8+PGNpcmNsZSBjeD0iMTIiIGN5PSIzMyIgcj0iMyIgZmlsbD0id2hpdGUiLz48Y2lyY2xlIGN4PSIzNiIgY3k9IjI4IiByPSIzLjIiIGZpbGw9IndoaXRlIi8+PC9zdmc+)](https://agenticraft.ai/docs)
@@ -29,7 +29,7 @@ The production infrastructure layer for AI agents. Build, deploy, and scale mult
 
 ## What Makes This Different
 
-**High-performance Rust data plane.** A 29-stage middleware pipeline processes every agent request at microsecond latency — intelligent provider routing, PII masking, budget enforcement, circuit breakers, and compliance audit trails. Policy enforcement happens in the data plane, not in Python.
+**High-performance Rust data plane.** A 28-stage middleware pipeline processes every agent request at microsecond latency — intelligent provider routing, PII masking, budget enforcement, circuit breakers, and compliance audit trails. Policy enforcement happens in the data plane, not in Python.
 
 **Formal verification.** Agent protocols are verified before deployment. If a coordination pattern has a deadlock or a protocol violation, you find it at compile time — not in a 3 AM incident.
 
@@ -90,7 +90,7 @@ craft start --app app.yaml
 
 - **100+ production patterns** — reasoning, coordination, workflow, resilience, RAG, safety, planning
 - **60+ mesh services** with defined SLAs — security, deployment, gateway, observability, and more
-- **17 LLM providers** with automatic failover — OpenAI, Anthropic, Google, Mistral, Azure OpenAI, Ollama, and 11 more
+- **18 LLM providers** with automatic failover — OpenAI, Anthropic, Google, Mistral, Azure OpenAI, Ollama, and 12 more
 - **MCP + A2A native** — open protocols for tool integration and inter-agent communication
 - **3 plugin tiers** — agent, app, and middleware plugins for extensibility without forking
 
@@ -98,7 +98,7 @@ craft start --app app.yaml
 
 | Library | Description |
 |---------|-------------|
-| [agenticraft-foundation](https://github.com/agenticraft/agenticraft-foundation) | Formally verified mathematical foundations for multi-agent AI coordination. Process algebra, session types, spectral topology, temporal logic. 1,165 tests, zero runtime dependencies. |
+| [agenticraft-foundation](https://github.com/agenticraft/agenticraft-foundation) | Formally verified mathematical foundations for multi-agent AI coordination. Process algebra, session types, spectral topology, temporal logic. 1,300+ tests, zero runtime dependencies. |
 
 ## Links
 
