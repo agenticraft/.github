@@ -6,11 +6,11 @@
   <img alt="AgentiCraft" src="readme-banner.svg" width="100%">
 </picture>
 
-The production infrastructure layer for AI agents. Build, deploy, and scale multi-agent systems with a high-performance Rust data plane, formal verification, and enterprise-grade governance.
+The production infrastructure layer for AI agents. Build, deploy, and scale multi-agent systems with a high-performance Rust data plane, AGNTCY-native interoperability, formal verification, and enterprise-grade governance.
 
 ---
 
-`Rust Data Plane` · `100+ Patterns` · `60+ Mesh Services` · `18 LLM Providers` · `Formal Verification` · `MCP + A2A`
+`Rust Data Plane` · `AGNTCY-Native` · `100+ Patterns` · `60+ Mesh Services` · `18 LLM Providers` · `Formal Verification` · `MCP + A2A`
 
 [![Website](https://img.shields.io/badge/agenticraft.ai-0D9488?style=flat-square&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0Ij48cG9seWdvbiBwb2ludHM9IjM5LDcgNTMsMjQgMzYsMjgiIGZpbGw9IndoaXRlIiBvcGFjaXR5PSIwLjg1Ii8+PHBvbHlnb24gcG9pbnRzPSIzOSw3IDEyLDMzIDM2LDI4IiBmaWxsPSJ3aGl0ZSIgb3BhY2l0eT0iMC43Ii8+PHBvbHlnb24gcG9pbnRzPSI1MywyNCA0Nyw0OSAzNiwyOCIgZmlsbD0id2hpdGUiIG9wYWNpdHk9IjAuNzUiLz48cG9seWdvbiBwb2ludHM9IjQ3LDQ5IDIyLDU0IDM2LDI4IiBmaWxsPSJ3aGl0ZSIgb3BhY2l0eT0iMC45Ii8+PHBvbHlnb24gcG9pbnRzPSIyMiw1NCAxMiwzMyAzNiwyOCIgZmlsbD0id2hpdGUiIG9wYWNpdHk9IjAuOTUiLz48Y2lyY2xlIGN4PSIzOSIgY3k9IjciIHI9IjMiIGZpbGw9IndoaXRlIi8+PGNpcmNsZSBjeD0iNTMiIGN5PSIyNCIgcj0iMi44IiBmaWxsPSJ3aGl0ZSIvPjxjaXJjbGUgY3g9IjQ3IiBjeT0iNDkiIHI9IjIuOCIgZmlsbD0id2hpdGUiLz48Y2lyY2xlIGN4PSIyMiIgY3k9IjU0IiByPSIyLjgiIGZpbGw9IndoaXRlIi8+PGNpcmNsZSBjeD0iMTIiIGN5PSIzMyIgcj0iMyIgZmlsbD0id2hpdGUiLz48Y2lyY2xlIGN4PSIzNiIgY3k9IjI4IiByPSIzLjIiIGZpbGw9IndoaXRlIi8+PC9zdmc+)](https://agenticraft.ai)
 [![Docs](https://img.shields.io/badge/docs-0D9488?style=flat-square&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0Ij48cG9seWdvbiBwb2ludHM9IjM5LDcgNTMsMjQgMzYsMjgiIGZpbGw9IndoaXRlIiBvcGFjaXR5PSIwLjg1Ii8+PHBvbHlnb24gcG9pbnRzPSIzOSw3IDEyLDMzIDM2LDI4IiBmaWxsPSJ3aGl0ZSIgb3BhY2l0eT0iMC43Ii8+PHBvbHlnb24gcG9pbnRzPSI1MywyNCA0Nyw0OSAzNiwyOCIgZmlsbD0id2hpdGUiIG9wYWNpdHk9IjAuNzUiLz48cG9seWdvbiBwb2ludHM9IjQ3LDQ5IDIyLDU0IDM2LDI4IiBmaWxsPSJ3aGl0ZSIgb3BhY2l0eT0iMC45Ii8+PHBvbHlnb24gcG9pbnRzPSIyMiw1NCAxMiwzMyAzNiwyOCIgZmlsbD0id2hpdGUiIG9wYWNpdHk9IjAuOTUiLz48Y2lyY2xlIGN4PSIzOSIgY3k9IjciIHI9IjMiIGZpbGw9IndoaXRlIi8+PGNpcmNsZSBjeD0iNTMiIGN5PSIyNCIgcj0iMi44IiBmaWxsPSJ3aGl0ZSIvPjxjaXJjbGUgY3g9IjQ3IiBjeT0iNDkiIHI9IjIuOCIgZmlsbD0id2hpdGUiLz48Y2lyY2xlIGN4PSIyMiIgY3k9IjU0IiByPSIyLjgiIGZpbGw9IndoaXRlIi8+PGNpcmNsZSBjeD0iMTIiIGN5PSIzMyIgcj0iMyIgZmlsbD0id2hpdGUiLz48Y2lyY2xlIGN4PSIzNiIgY3k9IjI4IiByPSIzLjIiIGZpbGw9IndoaXRlIi8+PC9zdmc+)](https://agenticraft.ai/docs)
@@ -29,7 +29,9 @@ The production infrastructure layer for AI agents. Build, deploy, and scale mult
 
 ## What Makes This Different
 
-**High-performance Rust data plane.** A 28-stage middleware pipeline processes every agent request at microsecond latency — intelligent provider routing, PII masking, budget enforcement, circuit breakers, and compliance audit trails. Policy enforcement happens in the data plane, not in Python.
+**High-performance Rust data plane.** A multi-stage middleware pipeline processes every agent request at microsecond latency — provider routing, privacy classification, cost controls, and reliability enforcement. Policy enforcement happens in the data plane, not in Python.
+
+**AGNTCY-native.** AgentiCraft is a full-stack implementation of the Linux Foundation's emerging "Internet of Agents" standard (contributed by Cisco) — OASF agent schemas, a federated discovery directory, W3C Verifiable Credentials identity, and SLIM messaging — implemented end-to-end across the Rust data plane and the Python control plane, not wrapped over an external SDK. Agents discover, identify, and coordinate on the standard the industry is consolidating around.
 
 **Formal verification.** Agent protocols are verified before deployment. If a coordination pattern has a deadlock or a protocol violation, you find it at compile time — not in a 3 AM incident.
 
@@ -89,7 +91,7 @@ craft start --app app.yaml
 ## By the Numbers
 
 - **100+ production patterns** — reasoning, coordination, workflow, resilience, RAG, safety, planning
-- **60+ mesh services** with defined SLAs — security, deployment, gateway, observability, and more
+- **60+ mesh services** with defined service-level objectives across 6 SLA tiers — security, deployment, gateway, observability, and more
 - **18 LLM providers** with automatic failover — OpenAI, Anthropic, Google, Mistral, Azure OpenAI, Ollama, and 12 more
 - **MCP + A2A native** — open protocols for tool integration and inter-agent communication
 - **3 plugin tiers** — agent, app, and middleware plugins for extensibility without forking
